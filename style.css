@@ -1,0 +1,168 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+#game-board{
+    width:600px;
+    margin:20px auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.card{
+    height:100px;
+
+    background:steelblue;
+    color:rgb(255, 255, 255);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+    font-size:2rem;
+}/* ===========================
+   GENERAL PAGE STYLING
+   =========================== */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #89f7fe,
+        #66a6ff
+    );
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ===========================
+   TITLE
+   =========================== */
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   GAME DESCRIPTION
+   =========================== */
+
+p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   SCORE SECTION
+   =========================== */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* ===========================
+   RESTART BUTTON
+   =========================== */
+
+#restart-btn {
+    background-color: #28a745;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   GAME BOARD
+   =========================== */
+
+#game-board {
+    width: 600px;
+
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+
+.card {
+    height: 100px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.card:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   CARD STATES
+   =========================== */
+
+/* When matched later */
+
+.matched {
+    background-color: #28a745;
+}
+
+/* When card is flipped */
+
+.flipped {
+    background-color: #f39c12;
+}
